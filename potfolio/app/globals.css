@@ -1,20 +1,29 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 * {
   font-family: var(--font-outfit), sans-serif;
 }
 
-/* Custom font utilities */
 .font-Ovo {
   font-family: var(--font-ovo), serif;
 }
-
 .font-Outfit {
   font-family: var(--font-outfit), sans-serif;
 }
 
-@layer base {
-  body {
-    @apply bg-white text-black;
+/* Force Tailwind to include your custom colors */
+@layer utilities {
+  .bg-darkTheme {
+    background-color: #11001F;
+  }
+  .dark .dark\:bg-darkTheme {
+    background-color: #11001F;
+  }
+  .dark .dark\:text-white {
+    color: #ffffff;
+  }
+  .text-black {
+    color: #000000;
   }
 }
