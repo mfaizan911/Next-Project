@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+* {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+/* Custom font utilities */
+.font-Ovo {
+  font-family: var(--font-ovo), serif;
+}
+
+.font-Outfit {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black;
+  }
+}
