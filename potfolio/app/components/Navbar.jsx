@@ -20,7 +20,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       </div>
       <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
         <a href="#top">
-          <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="" className="w-28 cursor-pointer mr-14 bg-white/50 backdrop-blur-lg shadow-sm py-2 px-3 border rounded-full dark:border dark:border-white/50 dark:bg-transparent" />
+          <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="" className="w-28 cursor-pointer mr-14 bg-white/50 backdrop-blur-lg shadow-sm py-2 px-3 border rounded-full dark:border dark:border-white/50 dark:bg-transparent"/>
         </a>
         <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-2 bg-white/50 backdrop-blur-lg shadow-sm dark:border dark:border-white/50 dark:bg-transparent'>
           <li> <a className="font-Ovo" href="#top"> Home </a> </li>
@@ -44,10 +44,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
         {/* mobile menu */}
 
-        <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50h-screen bg-rose-50 transition duration-600 dark:bg-[#2A004A] dark:text-white">
+        <ul ref={sideMenuRef} className="flex md:hidden flex-col gap-4 text-black py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-600 dark:bg-darkHover dark:text-white">
 
           <div className="absolute right-6 top-6" onClick={closeMenu}>
-            <Image className="w-5 cursor-pointer" src={isDarkMode ? assets.close_white : assets.close_white} alt="" />
+            <Image className="w-5 cursor-pointer" src={isDarkMode ? assets.close_white : assets.close_black} alt="" />
           </div>
 
           <li> <a className="font-Ovo" onClick={closeMenu} href="#top">Home</a> </li>
