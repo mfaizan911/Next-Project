@@ -100,15 +100,15 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Front-End Development', description: 'Professional websites built with HTML5, CSS3, JavaScript, React, and Tailwind CSS. I focus on clean code, responsive layouts, and seamless user experiences.', link: '' },
+    { icon: assets.mobile_icon, title: 'Mobile-Friendly Websites', description: 'Designing and developing responsive websites that adapt beautifully across smartphones, tablets, and desktops. Mobile-first design is always a priority.', link: '' },
+    { icon: assets.ui_icon, title: 'Figma to Code Conversion', description: 'Transforming Figma designs into pixel-perfect, production-ready code. I ensure design accuracy, responsiveness, and performance across modern browsers.', link: '' },
+    { icon: assets.graphics_icon, title: 'UI Polish & Visual Consistency', description: 'Refining layouts, colors, and dark mode setups to ensure visual consistency and client-facing professionalism.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Tailwind CSS' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BS in Infromation Enginerring Technology' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 

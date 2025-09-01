@@ -1,23 +1,47 @@
 import { assets, workData } from '@/assets/assets'
+import { motion } from 'motion/react'
 import Image from 'next/image'
 import React from 'react'
 
 const Work = () => {
     return (
-        <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
-            <h4 className='text-center mb-2 text-lg font-Ovo'>
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
+            <motion.h4
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                className='text-center mb-2 text-lg'>
                 My Portfolio
-            </h4>
-            <h2 className='text-center text-5xl font-Ovo'>
+            </motion.h4>
+            <motion.h2
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                className='text-center text-5xl'>
                 My latest Work
-            </h2>
-            <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+            </motion.h2>
+            <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                className='text-center max-w-2xl mx-auto mt-5 mb-12'>
                 Welcome to my portfolio. Here you'll find a selection of my recent work focused on responsive web design and front-end development.
-            </p>
+            </motion.p>
 
-            <div className='grid lg:grid-cols-4 sm:grid-cols-2 my-10 gap-5'>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.8, duration: 0.6 }}
+                className='grid lg:grid-cols-4 sm:grid-cols-2 my-10 gap-5'>
                 {workData.map((project, index) => (
-                    <div className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' key={index} style={{ backgroundImage: `url(${project.bgImage})` }}>
+                    <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
+                        className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' key={index} style={{ backgroundImage: `url(${project.bgImage})` }}>
                         <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
                             <div>
                                 <h2 className='font-semi_bold'>{project.title}</h2>
@@ -28,11 +52,15 @@ const Work = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
-            <a href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-2 px-8 mx-auto my-20 hover:bg-[#FcF4FF] duration duration-500'>Show more <Image src={assets.right_arrow_bold} alt='right_arrow' className='w-4'/></a>
-        </div>
+            </motion.div>
+            <motion.a
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 1, duration: 0.5 }}
+                href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-2 px-8 mx-auto my-20 hover:bg-[#FcF4FF] duration duration-500'>Show more <Image src={assets.right_arrow_bold} alt='right_arrow' className='w-4' /></motion.a>
+        </motion.div>
     )
 }
 
