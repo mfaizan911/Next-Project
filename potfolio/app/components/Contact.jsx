@@ -35,7 +35,8 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
-            id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'>
+            id='contact'
+            className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'>
             <motion.h4
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -69,7 +70,9 @@ const Contact = () => {
                         initial={{ x: -50, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ delay: 0.7, duration: 0.5 }}
-                        type="text" placeholder='Enter your name' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='name' />
+                        type="text" placeholder='
+                        Enter your name'
+                        required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white' name='name' />
                     <motion.input
                         initial={{ x: 50, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
@@ -84,7 +87,10 @@ const Contact = () => {
                 <motion.button
                     whileHover={{ sale: 1.05 }}
                     transition={{ duration: 0.3 }}
-                    type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer'>Submit now <Image src={assets.right_arrow_white} alt='' className='w-4' /></motion.button>
+                    type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer'>
+                    Submit now
+                    <Image unoptimized src={assets.right_arrow_white} alt='' className='w-4' />
+                </motion.button>
                 <motion.p
                     initial={{ y: -20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}

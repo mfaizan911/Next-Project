@@ -1,15 +1,3 @@
-import user_image from './user-image.png';
-import code_icon from './code-icon.png';
-import code_icon_dark from './code-icon-dark.png';
-import edu_icon from './edu-icon.png';
-import edu_icon_dark from './edu-icon-dark.png';
-import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
-import vscode from './vscode.png';
-import firebase from './firebase.png';
-import figma from './figma.png';
-import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.svg';
 import logo_dark from './logo_dark.svg';
@@ -35,20 +23,32 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import css from './css.svg';
+import git from './git.svg'
+import html from './html.svg'
+import javascript from './javascript.svg'
+import nodejs from './nodejs.svg'
+import npm from './npm.svg'
+import react from './react.svg'
+import vscode from './vscode.svg'
+import tailwindcss from './tailwindcss.svg'
+import github from './github.svg'
 
 export const assets = {
-    user_image,
-    code_icon,
-    code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
-    vscode,
-    firebase,
-    figma,
+    tailwindcss,
+    github,
+    npm,
+    nodejs,
+    javascript,
+    html,
     git,
-    mongodb,
+    css,
+    vscode,
+    react,
+    git,
+    css,
+    vscode,
+    git,
     right_arrow_white,
     logo,
     logo_dark,
